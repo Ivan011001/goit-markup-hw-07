@@ -76,6 +76,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .section-container {
+    width: 1158px;
+  }
+}
+
 .logotype {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -100,10 +106,6 @@ button {
 
 .menu-burger-button {
   display: none;
-}
-
-@media screen and (min-width: 328px) {
-
 }
 
 @media screen and (max-width: 767px) {
@@ -134,19 +136,24 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 0;
+  }
+
   .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .menu-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    gap: 110px;
   }
 
-  /* .logotype-2-header {
-    margin-right: 120px;
-  } */
-
+  .logotype-2-header {
+  }
   .nav-list {
     font-weight: 500;
     font-size: 16px;
@@ -156,7 +163,6 @@ button {
     display: flex;
     gap: 40px;
   }
-
   .nav-list-link {
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -169,9 +175,10 @@ button {
 
   .contact-list {
     font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
   }
 
   .contact-list-link {
@@ -183,47 +190,128 @@ button {
   .contact-list-link:focus {
     color: var(--header-list-item-hover-and-focus);
   }
+
+  .i-am-here-link {
+    color: #404bbf;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .i-am-here-link::after {
+    content: " ";
+    display: inline-block;
+    width: 48px;
+    height: 4px;
+    background: #404bbf;
+    border-radius: 2px;
+
+    cursor: default;
+  }
 }
 
-/* 
-
-
-
-
-.header-container {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .contact-list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
   }
+}
+
+@media screen and (min-width: 1158px) {
   .menu-container {
-    display: flex;
+    gap: 76px;
   }
- 
-.nav-list-container {
+
+  .contact-list {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.modal-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+
+  padding: 80px 35px 40px 40px;
+}
+.modal-menu-container {
   display: flex;
+  flex-direction: column;
+  gap: 284px;
 }
 
-.i-am-here-link {
-  color: #404bbf;
+.modal-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
-.i-am-here-link::after {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 4px;
-  background: #404bbf;
-  border-radius: 2px;
-  margin-top: 20px;
-}
-
-.contact-list-container {
+.modal-nav-list {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.tel {
-  margin-right: 40px;
-} */
+.modal-nav-list-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
 
+.modal-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.modal-number-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4d5ae5;
+
+  margin-bottom: 40px;
+}
+
+.modal-email-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.modal-social-media-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-second-part-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 /* =========== /HEADER =========== */
 
 .portfolio-header {
@@ -296,6 +384,7 @@ button {
   cursor: pointer;
 }
 /* =========== /HERO =========== */
+
 .info-section {
   padding-bottom: 120px;
   padding-top: 120px;
