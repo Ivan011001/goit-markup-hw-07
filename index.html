@@ -20,16 +20,16 @@
   <body>
     <header class="header">
       <div class="section-container header-container">
-        <nav class="menu menu-container">
+        <nav class="menu">
           <a class="logotype link" href="./index.html"
             >Web<span class="logotype-2-header">Studio</span></a
           >
-          <button type="button" class="menu-burger-button">
-            <svg class="burger-menu" width="32" height="22">
+          <button class="burger-menu-button" data-menu-open>
+            <svg class="burger-menu-button-image" width="32" height="22">
               <use href="./images/icons.svg/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
-          <ul class="nav-list list nav-list-container">
+          <ul class="nav-list list">
             <li class="nav-list-item">
               <a class="nav-list-link link i-am-here-link" href="./index.html">Studio</a>
             </li>
@@ -55,77 +55,90 @@
             </li>
           </ul>
         </address>
-      </div>
-      <div class="modal-menu">
-        <div class="modal-menu-container">
-          <ul class="modal-nav-list list">
-            <li class="modal-nav-list-item">
-              <a href="./index.html" class="modal-nav-list-link link">Studio</a>
-            </li>
-            <li class="modal-nav-list-item">
-              <a href="./portfolio.html" class="modal-nav-list-link link">Portfolio</a>
-            </li>
-            <li class="modal-nav-list-item">
-              <a href="" class="modal-nav-list-link link">Contacts</a>
-            </li>
-          </ul>
-          <div class="modal-second-part-wrapper">
-            <ul class="modal-contact-list list">
-              <li class="modal-contact-list-link">
-                <a class="modal-number-link link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+        <div class="modal-burger-menu" data-menu>
+          <div class="modal-burger-menu-container">
+            <button type="button" class="modal-burger-close-button" data-menu-close>
+              <svg class="close-image" width="8" height="8">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-close-btn"></use>
+              </svg>
+            </button>
+            <ul class="modal-burger-nav-list list">
+              <li class="modal-burger-nav-item">
+                <a href="./index.html" class="modal-burger-nav-link i-am-here link"
+                  >Studio</a
                 >
               </li>
-              <li class="modal-contact-list-link">
-                <a class="modal-email-link link tel" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="modal-burger-nav-item">
+                <a href="./portfolio.html" class="modal-burger-nav-link link"
+                  >Portfolio</a
                 >
               </li>
-            </ul>
-            <ul class="modal-social-media-list list">
-              <li class="modal-social-media-list-item">
-                <a href="" class="social-media-link">
-                  <svg class="social-media-picture" width="24" height="24">
-                    <use
-                      href="./images/icons.svg/symbol-defs.svg#icon-instagram-icon"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="modal-social-media-list-item">
-                <a href="" class="social-media-link">
-                  <svg class="social-media-picture" width="24" height="24">
-                    <use
-                      href="./images/icons.svg/symbol-defs.svg#icon-facebook-icon"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="modal-social-media-list-item">
-                <a href="" class="social-media-link">
-                  <svg class="social-media-picture" width="24" height="24">
-                    <use
-                      href="./images/icons.svg/symbol-defs.svg#icon-twitter-icon"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="modal-social-media-list-item">
-                <a href="" class="social-media-link">
-                  <svg class="social-media-picture" width="24" height="24">
-                    <use
-                      href="./images/icons.svg/symbol-defs.svg#icon-linkedin-icon"
-                    ></use>
-                  </svg>
-                </a>
+              <li class="modal-burger-nav-item">
+                <a href="" class="modal-burger-nav-link link">Contacts</a>
               </li>
             </ul>
+            <div class="modal-burger-second-part">
+              <ul class="modal-burger-contact-list list">
+                <li class="modal-burger-menu-contact-item">
+                  <a
+                    href="tel:+110001111111"
+                    class="modal-burger-menu-contact-link-phone link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="modal-burger-menu-contact-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="modal-burger-menu-contact-link-email link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="modal-burger-menu-social-list list">
+                <li class="social-media-list-item">
+                  <a href="" class="social-media-link footer-social-media-link">
+                    <svg class="social-media-picture" width="24" height="24">
+                      <use
+                        href="./images/icons.svg/symbol-defs.svg#icon-instagram-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-list-item">
+                  <a href="" class="social-media-link footer-social-media-link">
+                    <svg class="social-media-picture" width="24" height="24">
+                      <use
+                        href="./images/icons.svg/symbol-defs.svg#icon-facebook-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-list-item">
+                  <a href="" class="social-media-link footer-social-media-link">
+                    <svg class="social-media-picture" width="24" height="24">
+                      <use
+                        href="./images/icons.svg/symbol-defs.svg#icon-twitter-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-list-item">
+                  <a href="" class="social-media-link footer-social-media-link">
+                    <svg class="social-media-picture" width="24" height="24">
+                      <use
+                        href="./images/icons.svg/symbol-defs.svg#icon-linkedin-icon"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main class="main">
-      <!-- <section class="hero-section">
+      <section class="hero-section">
         <div class="section-container hero-container">
           <h1 class="main-title">
             Effective Solutions <br />
@@ -135,8 +148,8 @@
             Order Service
           </button>
         </div>
-      </section> -->
-      <!-- <section class="info-section">
+      </section>
+      <section class="info-section">
         <div class="section-container">
           <h2 class="secondary-title"></h2>
           <ul class="info-list list info-list-container">
@@ -190,13 +203,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="product-section">
+      </section>
+      <section class="product-section">
         <div class="section-container">
           <h2 class="secondary-title">What are we doing</h2>
-          <ul class="product-list list product-container">
+          <ul class="product-list list">
             <li>
               <img
+                srcset="
+                  ./images/images-index/desktop/device-1.jpg    1x,
+                  ./images/images-index/desktop/device-1@2x.jpg 2x
+                "
                 class="product-list-item"
                 src="./images/images-index/img-07.jpg"
                 alt="One computer"
@@ -206,6 +223,10 @@
             </li>
             <li>
               <img
+                srcset="
+                  ./images/images-index/desktop/device-2.jpg    1x,
+                  ./images/images-index/desktop/device-2@2x.jpg 2x
+                "
                 class="product-list-item"
                 src="./images/images-index/img-05.jpg"
                 alt="Several smartphones"
@@ -215,6 +236,10 @@
             </li>
             <li>
               <img
+                srcset="
+                  ./images/images-index/desktop/device-3.jpg    1x,
+                  ./images/images-index/desktop/device-3@2x.jpg 2x
+                "
                 class="product-list-item"
                 src="./images/images-index/img-06.jpg"
                 alt="One smartphone"
@@ -224,13 +249,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="team-section">
-        <div class="section-container">
+      </section>
+      <section class="team-section">
+        <div class="section-container team-section-container">
           <h2 class="secondary-title team-section-title">Our Team</h2>
           <ul class="team-list list team-list-container">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/images-index/desktop/worker-1.jpg    1x,
+                  ./images/images-index/desktop/worker-1@2x.jpg 2x
+                "
                 src="./images/images-index/img-01.jpg"
                 alt="Man with beard"
                 width="264"
@@ -281,6 +310,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/images-index/desktop/worker-2.jpg    1x,
+                  ./images/images-index/desktop/worker-2@2x.jpg 2x
+                "
                 src="./images/images-index/img-02.jpg"
                 alt="Smiling man"
                 width="264"
@@ -331,6 +364,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/images-index/desktop/worker-3.jpg    1x,
+                  ./images/images-index/desktop/worker-3@2x.jpg 2x
+                "
                 src="./images/images-index/img-03.jpg"
                 alt="Beautiful girl"
                 width="264"
@@ -381,6 +418,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/images-index/desktop/worker-4.jpg    1x,
+                  ./images/images-index/desktop/worker-4@2x.jpg 2x
+                "
                 src="./images/images-index/img-04.jpg"
                 alt="Handsome man"
                 width="264"
@@ -431,8 +472,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="customers-section">
+      </section>
+      <section class="customers-section">
         <div class="section-container">
           <h2 class="customers-title">Customers</h2>
           <ul class="client-list list">
@@ -480,10 +521,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="footer">
-      <!-- <div class="section-container footer-container">
+      <div class="section-container footer-container">
         <div class="footer-first-part">
           <a class="logotype link" href="./index.html"
             >Web<span class="logotype-footer">Studio</span></a
@@ -547,9 +588,9 @@
             </button>
           </form>
         </div>
-      </div> -->
+      </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="close-image" width="8" height="8">
@@ -625,7 +666,8 @@
           <button type="submit" class="modal-submit-button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
